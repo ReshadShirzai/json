@@ -189,49 +189,45 @@ const data = JSON.parse(jsonData);
   }
 
   // Opdr 7
-  const john = `
-  { 
-    name: "John", 
-    age: 20,
-    marks: {
-        science: 70,
-        math: 75
+  const joe =  { 
+      name: "John", 
+      age: 20,
+      marks: {
+          science: 70,
+          math: 75
+      }
     }
-}
-`
 
-const objSeven = JSON.parse(john);
-console.log(objSeven);
+const jsonObject = JSON.stringify(joe);
+console.log(jsonObject);
 
 
 // Opdr 8
-const xMen = `
-[
-	{ 
-		name: 'Wolverine', 
-		age: 38,
-		marks: {
-			science: 20,
-			math: 15
-		}
-	},
-	{ 
-		name: 'Xavier', 
-		age: 64,
-		marks: {
-			science: 95,
-			math: 90
-		}
-	},
-	{ 
-		name: 'Magneto', 
-		age: 68,
-		marks: {
-			science: 90,
-			math: 85
-		}
-	}
-]
-`
-const objEight = JSON.parse(xMen);
-console.log(objEight);
+const xMen =  [
+	  { 
+		  name: 'Wolverine', 
+		  age: 38,
+		  marks: {
+			  science: 20,
+			  math: 15
+		  }
+	  },
+	  { 
+		  name: 'Xavier', 
+		  age: 64,
+		  marks: {
+			  science: 95,
+			  math: 90
+		  }
+	  },
+	  { 
+		  name: 'Magneto', 
+		  age: 68,
+		  marks: {
+			  science: 90,
+			  math: 85
+		  }
+	  }
+  ]
+const jsonObjTwo = JSON.stringify(xMen);
+console.log(jsonObjTwo);
